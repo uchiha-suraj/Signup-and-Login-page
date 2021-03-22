@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sidebar Login Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="http://infiniteiotdevices.com/images/logo.png" rel="icon" sizes="16x16" type="image/gif" />
+	<link rel="stylesheet" type="text/css" href="siderbar-login-form-8.css">	
+</head>
+<body>
+	<div class="sidebar-login">
+		<div class="toggle"></div>
+		<form>
+			<h2>Sign In</h2>
+			<div class="input-box">
+				<i class="fa fa-user"></i>
+				<input type="text" name="" placeholder="Username" required="">
+			</div>
+			<div class="input-box">
+				<i class="fa fa-lock"></i>
+				<input type="password" name="" placeholder="Password" required="">
+			</div>
+			<div class="input-box">
+				<input type="submit" name="" value="Login">
+			</div>
+			<a href="#" class="a">Forget Password</a>
+			<h5>Sign Up Using</h5>
+			<ul>
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-google"></i></a></li>
+			</ul>
+			<h4>Create account? <a href="#">Sign Up</a></h4>
+		</form>
+	</div>
+	<div class="banner"></div>
+	<div class="content">
+		<h2>WHAT IS ARDUINO ?</h2> 
+			<p>Arduino is an open-source platform used for building electronics projects. They consists of both a physical programmable circuit board (often referred to as a microcontroller) and a piece of software, or IDE (Integrated Development Environment) that runs on your computer, used to write and upload computer code to the physical board.<br><br>
+
+			To load new code onto the board you can simply use a USB cable. Additionally, the Arduino IDE uses a simplified version of C++, making it easier to learn to program.<br><br>
+
+			This boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn it into an output - activating a motor, turning on an LED, publishing something online. You can tell your board what to do by sending a set of instructions to the microcontroller on the board.<br><br>
+
+			Over the years this device has been the brain of thousands of projects, from everyday objects to complex scientific instruments. A worldwide community of makers - students, hobbyists, artists, programmers, and professionals - has gathered around this open-source platform, their contributions have added up to an incredible amount of accessible knowledge that can be of great help to novices and experts alike.<br><br>
+
+			All Arduino boards are completely open-source, empowering users to build them independently and eventually adapt them to their particular needs. The software, too, is open-source, and it is growing through the contributions of users worldwide.</p>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.toggle').click(function(){
+				$('.sidebar-login').toggleClass('active')
+				$('.toggle').toggleClass('active')
+			})
+		})
+	</script>
+</body>
+</html>
